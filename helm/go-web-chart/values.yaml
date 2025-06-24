@@ -8,7 +8,7 @@ image:
   repository: jeet23/go-web
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "15851642709"
+  tag: "15852403574"
 
 ingress:
   enabled: false
