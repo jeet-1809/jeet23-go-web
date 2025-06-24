@@ -1,0 +1,22 @@
+# This is a sample deployment manifest file for a simple web application.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webing3
+  labels:
+    app: webing3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webing3
+  template:
+    metadata:
+      labels:
+        app: webing3
+    spec:
+      containers:
+      - name: webing3
+        image: jeet23/go-web:v1
+        ports:
+        - containerPort: 8080
